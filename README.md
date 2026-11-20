@@ -1,53 +1,67 @@
 # StockDataAnalysis powerbi
 
-**Portfolio project** · A Power BI workbook for analyzing stock data from spreadsheet inputs.
+Analyzes stock data in Power BI using spreadsheet inputs and interactive visuals.
 
 ## Overview
 
-A Power BI workbook for analyzing stock data from spreadsheet inputs.
+The repository contains an implemented application or analysis project with code organized around its primary runtime, interface, data, or automation responsibilities.
+
+## Key Features
+
+- Data ingestion and cleaning
+- Structured analysis or reporting
+- Interactive or notebook-based presentation
+- Repeatable processing workflow
 
 ## Technology Stack
 
-- `Power BI`
-- `Data analysis`
+| Area | Technology |
+|---|---|
+| Platform | Power BI |
+| Library / Framework / Tool | Spreadsheet / CSV data |
 
-## How the Repository Works
+## Architecture and Data Flow
 
 ```mermaid
 flowchart LR
-    N0["Source data<br/> Import dataset"]
-    N1["Transform<br/> Clean and aggregate"]
+    N0["Data Ingestion<br/> Source files or datasets are loaded."]
+    N1["Preparation<br/> Data is cleaned, transformed, or filtered."]
+    N2["Analysis<br/> Aggregations, models, or visual measures are applied."]
+    N3["Validation<br/> Results are checked with metrics or reporting."]
+    N4["Output<br/> Notebook results or dashboard views communicate findings."]
     N0 --> N1
-    N2["Visual model<br/> Build measures and views"]
     N1 --> N2
-    N3["Dashboard<br/> Present insights"]
     N2 --> N3
+    N3 --> N4
 ```
 
 | Stage | Responsibility |
 |---|---|
-| **Source data** | Import dataset |
-| **Transform** | Clean and aggregate |
-| **Visual model** | Build measures and views |
-| **Dashboard** | Present insights |
+| **Data Ingestion** | Source files or datasets are loaded. |
+| **Preparation** | Data is cleaned, transformed, or filtered. |
+| **Analysis** | Aggregations, models, or visual measures are applied. |
+| **Validation** | Results are checked with metrics or reporting. |
+| **Output** | Notebook results or dashboard views communicate findings. |
 
-## Concepts Covered
-
-- Data ingestion
-- Cleaning and aggregation
-- Calculated measures
-- Interactive filters
-- Dashboard storytelling
-
-## Repository Map
+## Repository Structure
 
 - `stock Data Analysis(powerbi).pbix`
 - `StocksData.xlsx`
 
-## Recruiter Summary
+## Setup
 
-This repository demonstrates practical implementation skills, repository organization, and an end-to-end understanding of the project workflow. It is suitable as a focused example of applied software or data work.
+1. Open the report with Tableau or Power BI as applicable.
+2. Confirm the workbook data-source paths.
+3. Refresh the report and review the dashboards.
 
----
+## Usage
 
-<sub>Documentation is concise and project-focused; source code was not modified.</sub>
+Open the workbook, refresh the connected data, and interact with filters or dashboard views.
+
+## Configuration
+
+No mandatory repository-specific configuration is documented by the project structure. Environment or runtime options may be defined inside the relevant entry-point file or platform settings.
+
+## Verification
+
+- Refresh the report data source and verify the dashboards, filters, totals, and chart outputs.
